@@ -6,19 +6,26 @@
     <title>Game Desk</title>
     <link rel="stylesheet" href="styles.css">
   
+    <style>
+      body {
+          background-image: url('drag1.png');
+          background-repeat: no-repeat;
+          background-size: 500px;
+      }
+  </style>
     
 </head>
  
 <body>
   
-
+  
     <header>
       <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="rules.html">Rules</a></li>
           <li><a href="rewards.html">Rewards</a></li>
-        </ul>
+           </ul>
       </nav>
     </header>
 
@@ -26,20 +33,24 @@
         <img src="gmlogo.png" alt="logo do game desk" width="auto" height="300" margin-top="300px";>
       </div>
 
-     <div id="tooltip"> essa mensagem aparece</div>
-
-    
+ 
+     <div class="tooltip" id="tooltipArqueiro"><img src="cardarq.png" > <button id="closeArqueiro">X</button></div>
+     <div class="tooltip" id="tooltipMago"><img src="cardmag.png" > <button id="closeMago">X</button></div>
+     <div class="tooltip" id="tooltipCavaleiro"><img src="cardcav.png" > <button id="closeCavaleiro">X</button></div>
+     <div class="tooltip" id="tooltipBarbaro"><img src="cardbar.png" ><button id="closeBarbaro">X</button></div>
+     <div class="tooltip" id="tooltipMitica"><img src="cardmit.png" > <button id="closeMitica">X</button></div>
+        
      
       <div class="button">
-        <button id="arqueiro"><img src="arqueiro.png" alt="arqueiro"></button>
-        <button id="mago"> <img src="mago.png" alt="mago"> </button>
-        <button id="cavaleiro"> <img src="cavaleiro.png" alt="mago"> </button>
-        <button id="barbaro"> <img src="barbaro.png" alt="mago"> </button>
-        <button id="cmitica"><img src="cmitica.png" alt="mago"> </button>
+        <button class="caracteristicas" id="arqueiro"><img src="arq.png" alt="arqueiro"></button>
+        <button class="caracteristicas" id="mago"> <img src="mag.png" alt="mago"> </button>
+        <button class="caracteristicas" id="cavaleiro"> <img src="cav.png" alt="mago"> </button>
+        <button class="caracteristicas" id="barbaro"> <img src="bar.png" alt="mago"> </button>
+        <button class="caracteristicas" id="cmitica"><img src="mit.png" alt="mago"> </button>
       </div>
  
 
-    <footer><p>Projeto Game Desk - CSC 2024</p></footer>
+    <footer><p>Projeto Game Desk - CSC 2024 © Todos direitos reservados</p></footer>
     <script src="app.js"></script>
 </body>
 </html>
