@@ -28,38 +28,56 @@ header{
 
 }
 
+.botao {
+  /* Estilos para os botões */
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  padding: 10px 20px;
+}
 
-  #tooltip {
-    display: none;
-    position: absolute;
-    background-color: #8e6a33;
-    border: 1px solid #ccc;
-    border-radius: 20px;
-    padding: 10px;
-    z-index: 1;
-  }
+.tooltip {
+  /* Estilos para os tooltips */
+  position: absolute;
+  background-color: #8e6a33;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  padding: 10px;
+  display: none; /* Inicialmente escondido */
+}
 
+ .autor{
 
+  position: right top;
+
+}
 
 .classes img {
     overflow: auto; /* Permite rolagem se necessário */
     float: left; /* Faz com que as imagens flutuem para a esquerda */
     height: 10%; /* Define a largura de cada imagem (ajuste conforme necessário) */
     margin: 13px; /* Adiciona uma margem para espaçar as imagens */
-   
+    border: 1px;
     
   }
 
   button {
     position: center center;
     float: left;
-    background: none;
+    background-color: none;
     border: 0px;
+    border-radius: 20px;
     height: 100%; /* Define a largura de cada imagem (ajuste conforme necessário) */
-    margin: 2px; /* Adiciona uma margem para espaçar as imagens */
+    margin: 1px; /* Adiciona uma margem para espaçar as imagens */
     cursor: pointer;
     align-items: center;
     flex-direction: column;
+  }
+
+  .caracteristicas {
+    
+    background-color: #8e6a33;
+    border: 0px solid #8e6a33;
+    margin: 1px;
   }
   
   nav {
@@ -78,7 +96,7 @@ header{
   }
   
   nav li {
-    margin: 0 10px;
+    margin: 0 50px;
   }
   
   nav a {
