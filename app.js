@@ -59,12 +59,25 @@ closeMitica.addEventListener("click", (event) => {
   tooltipMitica.style.display = "none";
 });
 
+const botaoTitan = document.getElementById('titan');
+const tooltipTitan = document.getElementById('tooltipTitan');
+
+botaoTitan.addEventListener("click", () => {
+  tooltipTitan.style.display = "block";
+});
+
+closeTitan.addEventListener("click", (event) => {
+  event.stopPropagation();
+  tooltipTitan.style.display = "none";
+});
+
 function fecharTooltips() {
   tooltipMago.style.display = "none";
   tooltipCavaleiro.style.display = "none";
   tooltipArqueiro.style.display = "none";
   tooltipBarbaro.style.display = "none";
   tooltipMitica.style.display = "none";
+  tooltipTitan.style.display = "none";
 }
 
 // Evento global de clique para fechar tooltips ao clicar fora
@@ -73,7 +86,8 @@ document.addEventListener('click', (event) => {
       !botaoCavaleiro.contains(event.target) && !tooltipCavaleiro.contains(event.target) &&
       !botaoArqueiro.contains(event.target) && !tooltipArqueiro.contains(event.target) &&
       !botaoBarbaro.contains(event.target) && !tooltipBarbaro.contains(event.target) &&
-      !botaoMitica.contains(event.target) && !tooltipMitica.contains(event.target)) {
+      !botaoMitica.contains(event.target) && !tooltipMitica.contains(event.target) &&
+      !botaoTitan.contains(event.target) && !tooltipTitan.contains(event.target)) {
       fecharTooltips();
   }
 });
