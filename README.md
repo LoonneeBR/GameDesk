@@ -5,6 +5,9 @@ O **GameDesk** é uma plataforma web desenvolvida para incentivar e recompensar 
 ## 🚀 Sobre o Projeto
 Este repositório foi criado para praticar e consolidar conceitos fundamentais de desenvolvimento web front-end. 
 
+<img width="1365" height="638" alt="image" src="https://github.com/user-attachments/assets/07a120ab-060f-4a57-875e-c94b233662d4" />
+
+
 O sistema permite:
 * Visualizar regras de pontuação.
 * Consultar recompensas disponíveis.
